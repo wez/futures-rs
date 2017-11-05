@@ -199,11 +199,14 @@ pub use future::{
 
 #[cfg(feature = "use_std")]
 mod lock;
+#[cfg(feature = "use_std")]
 mod task_impl;
 
 mod resultstream;
 
+#[cfg(feature = "use_std")]
 pub mod task;
+#[cfg(feature = "use_std")]
 pub mod executor;
 #[cfg(feature = "use_std")]
 pub mod sync;
